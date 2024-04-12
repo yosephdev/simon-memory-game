@@ -5,16 +5,16 @@ let game = {
     choices: ["button1", "button2", "button3", "button4"]
 }
 
-function newGame() {    
-    game.score = 0; 
+function newGame() {
+    game.score = 0;
     game.currentGame = [];
-    game.playerMoves = []; 
-    showScore();  
+    game.playerMoves = [];
+    showScore();
     addTurn();
 }
 
 function addTurn() {
-    game.playerMoves = [];    
+    game.playerMoves = [];
     game.currentGame.push(game.choices[(Math.floor(Math.random() * 4))]);
 }
 
@@ -23,10 +23,13 @@ function showScore() {
 }
 
 function lightsOn(circ) {
-    document.getElementById(circ).classList.add("light");
+    let button = document.getElementById(circ);
+    button.classList.remove("circle");
+    button.classList.add(circ + "light");
     setTimeout(function () {
-        document.getElementById(circ).classList.remove("light");
+        button.classList.remove(circ + "light");
     }, 400);
 }
 
-module.exports = {game, newGame, showScore, addTurn, lightsOn};
+
+module.exports = { game, newGame, showScore, addTurn, lightsOn };

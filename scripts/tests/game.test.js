@@ -58,5 +58,10 @@ describe("gameplay works correctly", () => {
         game.currentGame = [];
         game.playerMoves = [];
         addTurn();
-    })
+    });
+    afterEach(() => {
+        game.score = 0;
+        game.currentGame = [];
+        game.playerMoves = [];
+    });
 });

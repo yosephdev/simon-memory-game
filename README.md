@@ -2,6 +2,8 @@
 
 Simon Memory Game is a classic memory game where players need to remember and repeat a sequence of colors and sounds.
 
+![Simon Game Screenshot](simon-game-screenshot.png)
+
 ## Features
 
 - Memorable Gameplay: Test and improve your memory by repeating increasingly complex sequences of colors and sounds.

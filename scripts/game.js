@@ -11,4 +11,8 @@ function newGame() {
     game.playerMoves = [];   
 }
 
+function showScore() {
+    document.getElementById("score").innerText = game.score;
+}
+
 module.exports = {game, newGame};

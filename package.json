@@ -1,0 +1,15 @@
+{
+  "name": "jest2",
+  "version": "1.0.0",
+  "description": "Simon Memory Game is a classic memory game where players need to remember and repeat a sequence of colors and sounds.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "(https://github.com/yosephdev/Jest-Simon-Game)"
+  },
+  "author": "Yoseph Berhane",
+  "license": "ISC"
+}

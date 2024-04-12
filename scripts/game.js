@@ -29,4 +29,4 @@ function lightsOn(circ) {
     }, 400);
 }
 
-module.exports = {game, newGame, showScore, addTurn};
+module.exports = {game, newGame, showScore, addTurn, lightsOn};

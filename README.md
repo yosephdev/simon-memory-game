@@ -9,6 +9,10 @@ Simon Memory Game is a classic memory game where players need to remember and re
 - Score Tracking: Keep track of your score to challenge yourself and beat your previous records.
 - Easy to Play: Simple controls make it easy for anyone to pick up and enjoy the game.
 
+## Development Approach
+
+This project is part of Code Institute's JavaScript Testing With Jest module (CodeInstitute: JT101). While not strictly adhering to Test-Driven Development (TDD) principles, it demonstrates a test-driven approach to development. The process may differ from traditional development methods but emphasizes the benefits of building with tests and confirming each piece of code works before moving on to the next.
+
 ## Technologies Used
 
 - HTML

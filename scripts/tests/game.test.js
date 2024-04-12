@@ -32,7 +32,9 @@ describe("game object contains correct keys", () => {
 
 describe("newGame works correctly", () => {
     beforeAll(() => {
-        game.score = 42;        
+        game.score = 42;  
+        game.playerMoves = ["button1", "button2"];
+        game.currentGame = ["button1", "button2"];      
         newGame();
     });  
     test("should set game score to zero", () => {

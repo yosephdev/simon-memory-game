@@ -51,3 +51,12 @@ describe("newGame works correctly", () => {
         expect(game.currentGame.length).toBe(1);
     });
 });
+
+describe("gameplay works correctly", () => {
+    beforeEach(() => {
+        game.score = 0;
+        game.currentGame = [];
+        game.playerMoves = [];
+        addTurn();
+    })
+});

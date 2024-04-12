@@ -9,4 +9,4 @@ function newGame() {
     game.score = 0;    
 }
 
-module.exports = {game};
+module.exports = {game, newGame};

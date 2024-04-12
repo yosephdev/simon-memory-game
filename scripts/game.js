@@ -14,8 +14,8 @@ function newGame() {
 }
 
 function addTurn() {
-    game.playerMoves = [];
-    game.currentGame.push(game.choices[Math.floor(Math.random() * 4)]);
+    game.playerMoves = [];    
+    game.currentGame.push(game.choices[(Math.floor(Math.random() * 4))]);
 }
 
 function showScore() {

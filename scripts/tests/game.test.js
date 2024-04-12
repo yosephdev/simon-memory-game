@@ -34,5 +34,8 @@ describe("newGame works correctly", () => {
     beforeAll(() => {
         game.score = 42;        
         newGame();
-    });     
+    });  
+    test("should set game score to zero", () => {
+        expect(game.score).toEqual(0);
+    });   
 });

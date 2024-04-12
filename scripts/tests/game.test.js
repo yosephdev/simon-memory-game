@@ -64,4 +64,8 @@ describe("gameplay works correctly", () => {
         game.currentGame = [];
         game.playerMoves = [];
     });
+    test("addTurn adds a new turn to the game", () => {
+        addTurn();
+        expect(game.currentGame.length).toBe(2);
+    });
 });

@@ -11,5 +11,8 @@
     "url": "(https://github.com/yosephdev/Jest-Simon-Game)"
   },
   "author": "Yoseph Berhane",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
 }

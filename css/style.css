@@ -1,7 +1,9 @@
+/* Font */
 body {
     font-family: Montserrat, sans-serif;
 }
 
+/* Headings */
 h1 {
     font-weight: 300;
     margin-bottom: 10px;
@@ -12,6 +14,7 @@ h2 {
     margin-top: 10px;
 }
 
+/* Layout */
 .container {
     position: relative;
     width: 500px;
@@ -20,11 +23,14 @@ h2 {
     margin-bottom: 35px;
     text-align: center;
 }
+
+/* Circles */
 .circle {
     border-radius: 50%;
     position: absolute;
     cursor: pointer;
 }
+
 .circle1 {
     height: 500px;
     width: 500px;
@@ -38,6 +44,7 @@ h2 {
     top: 50px;
     left: 50px;
 }
+
 .circle3 {
     height: 300px;
     width: 300px;
@@ -45,6 +52,7 @@ h2 {
     top: 100px;
     left: 100px;
 }
+
 .circle4 {
     height: 200px;
     width: 200px;
@@ -53,6 +61,7 @@ h2 {
     left: 150px;
 }
 
+/* Scorebox */
 .scorebox {
     border-radius: 25%;
     box-sizing: border-box;
@@ -68,6 +77,7 @@ h2 {
     padding-top: 10px;
 }
 
+/* Button */
 .button {
     background-color: #FF5A60;
     color: #FFF;
@@ -82,6 +92,7 @@ h2 {
     font-weight: 600;
 }
 
+/* Light class */
 .light {
     opacity: 0.4;
 }

@@ -73,4 +73,9 @@ describe("gameplay works correctly", () => {
         lightsOn(game.currentGame[0]);
         expect(button.classList).toContain(game.currentGame[0] + "light");
     });
+    test("showTurns should update game.turnNumber", () => {
+        game.turnNumber = 42;
+        showTurns();
+        expect(game.turnNumber).toBe(0);
+    });
 });

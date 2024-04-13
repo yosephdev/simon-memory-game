@@ -50,6 +50,7 @@ function lightsOn(circ) {
 }
 
 function showTurns() {
+    game.turnInProgress = true;
     game.turnNumber = 0;
     let turns = setInterval(function () {
         lightsOn(game.currentGame[game.turnNumber]);

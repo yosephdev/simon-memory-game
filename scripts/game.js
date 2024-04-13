@@ -32,7 +32,7 @@ function newGame() {
 
     addTurn();
     showScore();
-    alert("Game has started!");    
+    alert("Game has started!");
 }
 
 function addTurn() {
@@ -47,12 +47,13 @@ function showScore() {
 
 function lightsOn(circ) {
     let button = document.getElementById(circ);
-    button.classList.remove("circle");
-    button.classList.add(circ + "light");
+    button.className = "";
+    button.classList.add("light");
     setTimeout(function () {
-        button.classList.remove(circ + "light");
+        button.classList.remove("light");
     }, 400);
 }
+
 
 function showTurns() {
     game.turnInProgress = true;

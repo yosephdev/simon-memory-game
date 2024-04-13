@@ -5,13 +5,15 @@ let game = {
     turnNumber: 0,
     lastButton: "",
     turnInProgress: false,
-    choices: ["button1", "button2", "button3", "button4"]
+    choices: ["button1", "button2", "button3", "button4"],
+    gameState: "stopped"
 };
 
 function newGame() {
     game.score = 0;
     game.currentGame = [];
     game.playerMoves = [];
+    game.gameState = "started";
 
     for (let circle of document.getElementsByClassName("circle")) {
         if (circle.getAttribute("data-listener") !== "true") {
@@ -30,6 +32,7 @@ function newGame() {
 
     addTurn();
     showScore();
+    alert("Game has started!");    
 }
 
 function addTurn() {

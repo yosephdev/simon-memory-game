@@ -4,7 +4,7 @@ let game = {
     playerMoves: [],
     turnNumber: 0,
     choices: ["button1", "button2", "button3", "button4"]
-}
+};
 
 function newGame() {
     game.score = 0;
@@ -23,13 +23,13 @@ function newGame() {
         }
     }
 
-    showScore();
     addTurn();
+    showScore();
 }
 
 function addTurn() {
     game.playerMoves = [];
-    game.currentGame.push(game.choices[(Math.floor(Math.random() * 4))]);
+    game.currentGame.push(game.choices[Math.floor(Math.random() * 4)]);
     showTurns();
 }
 

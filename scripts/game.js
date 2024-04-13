@@ -3,6 +3,8 @@ let game = {
     score: 0,
     playerMoves: [],
     turnNumber: 0,
+    lastButton: "",
+    turnInProgress: false,
     choices: ["button1", "button2", "button3", "button4"]
 };
 

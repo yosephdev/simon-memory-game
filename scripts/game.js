@@ -57,6 +57,7 @@ function showTurns() {
         game.turnNumber++;
         if (game.turnNumber >= game.currentGame.length) {
             clearInterval(turns);
+            game.turnInProgress = false;
         }
     }, 800);
 }

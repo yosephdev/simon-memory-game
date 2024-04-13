@@ -51,7 +51,7 @@ describe("newGame works correctly", () => {
         expect(game.currentGame.length).toBe(1);
     });
     test("should display 0 for the element with id of score", () => {
-        expect(document.getElementById("score").innerText).toEqual("0");
+        expect(document.getElementById("score").innerText).toEqual(0);
     });
     test("expect data-listener to be true", () => {
         newGame();

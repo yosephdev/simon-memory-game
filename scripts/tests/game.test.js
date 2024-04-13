@@ -105,4 +105,10 @@ describe("gameplay works correctly", () => {
         showTurns();
         expect(game.turnInProgress).toBe(true);
     });
+    test("clicking during computer sequence should fail", () => {
+        showTurns();
+        game.lastButton = "";
+        document.getElementById("button2").click();
+        expect(game.lastButton).toEqual("");
+    });
 });

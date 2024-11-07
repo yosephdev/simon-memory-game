@@ -23,6 +23,7 @@ function newGame() {
                     game.lastButton = move;
                     game.playerMoves.push(move);
                     lightsOn(move);
+                    playSound(move);
                     playerTurn();
                 }
             });
@@ -54,12 +55,22 @@ function lightsOn(circ) {
     }, 400);
 }
 
+function playSound(circ) {
+    const soundMap = {
+        button1: "sound1",
+        button2: "sound2",
+        button3: "sound3",
+        button4: "sound4"
+    };
+    document.getElementById(soundMap[circ]).play();
+}
 
 function showTurns() {
     game.turnInProgress = true;
     game.turnNumber = 0;
     let turns = setInterval(function () {
         lightsOn(game.currentGame[game.turnNumber]);
+        playSound(game.currentGame[game.turnNumber]);
         game.turnNumber++;
         if (game.turnNumber >= game.currentGame.length) {
             clearInterval(turns);

@@ -96,3 +96,8 @@ h2 {
 .light {
     opacity: 0.4;
 }
+
+.wrong {
+    background-color: red; 
+    transition: background-color 0.4s ease;
+}

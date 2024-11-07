@@ -32,7 +32,7 @@ function newGame() {
 
     addTurn();
     showScore();
-    alert("Game has started!");
+    alert("Welcome to the Game! Click the circles to play.");
 }
 
 function addTurn() {
@@ -77,9 +77,23 @@ function playerTurn() {
             addTurn();
         }
     } else {
-        alert("Wrong move!");
+        document.getElementById(game.playerMoves[i]).classList.add("wrong");
+        setTimeout(() => {
+            document.getElementById(game.playerMoves[i]).classList.remove("wrong");
+        }, 400);
+        
+        alert("Oops! That's not correct. Let's start over.");
         newGame();
     }
 }
 
-module.exports = { game, newGame, showScore, addTurn, lightsOn, showTurns, playerTurn };
+function resetGame() {
+    game.score = 0;
+    game.currentGame = [];
+    game.playerMoves = [];
+    game.gameState = "stopped";
+    showScore();
+    alert("Game has been reset! Click to start a new game.");
+}
+
+module.exports = { game, newGame, showScore, addTurn, lightsOn, showTurns, playerTurn, resetGame };

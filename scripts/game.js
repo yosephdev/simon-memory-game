@@ -107,4 +107,4 @@ function resetGame() {
     alert("Game has been reset! Click to start a new game.");
 }
 
-module.exports = { game, newGame, showScore, addTurn, lightsOn, showTurns, playerTurn, resetGame };
+export { game, newGame, showScore, addTurn, lightsOn, showTurns, playerTurn, resetGame };
